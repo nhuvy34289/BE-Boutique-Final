@@ -11,6 +11,9 @@ app.use(cors());
 app.use(cookieParser());
 
 const port = process.env.PORT || 5000;
+app.use("/api", require("./routers/authRouter"));
+app.use("/api", require("./routers/userRouter"));
+app.use("/api", require("./routers/categoryRouter"));
 
 //socket
 const http = require("http").createServer(app);
