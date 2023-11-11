@@ -14,6 +14,8 @@ const port = process.env.PORT || 5000;
 app.use("/api", require("./routers/authRouter"));
 app.use("/api", require("./routers/userRouter"));
 app.use("/api", require("./routers/categoryRouter"));
+app.use("/api", require("./routers/productRouter"));
+app.use("/api", require("./routers/cartRouter"));
 
 //socket
 const http = require("http").createServer(app);
