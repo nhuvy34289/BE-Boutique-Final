@@ -94,7 +94,7 @@ const totalCaculating = (item) => {
   );
   const taxPrice = itemPrice * 0.1;
   const taxPrices = taxPrice;
-  const shippingPrice = itemPrice > 2000 ? 0 : 50;
+  const shippingPrice = itemPrice > 2000 ? 0 : 25;
   const totalPrice = itemPrice + shippingPrice;
   return totalPrice;
 };
